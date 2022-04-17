@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="primary-slider" class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <a href="/dev"><h1 style="color: blue; padding-top: 400px; margin-left: 730px; text-decoration: none">Интернет клиника</h1>
+                </a>
+                <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613688086_24-p-fon-dlya-prezentatsii-doktor-26.jpg">
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var primarySlider = new Splide('#primary-slider', {
+            type: 'fade',
+            heightRatio: 0.5,
+            pagination: false,
+            arrows: true,
+            cover: true,
+        }).mount(); // do not call mount() here.
+    });
+</script>
+{% endblock %}
