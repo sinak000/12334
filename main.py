@@ -1,4 +1,5 @@
 #  -----------------------------------------------------------------------------------------
+
 from flask import Flask, render_template, redirect, abort, request, Blueprint, jsonify
 import requests
 import os
@@ -12,6 +13,7 @@ from forms.user import RegisterForm, LoginForm
 from forms.buildings_edit import BuildingForm
 from forms.sign_for_show import SignForm
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
+
 #  ------------------------------------------------------------------------------------------
 
 app = Flask(__name__, template_folder='../templates')
